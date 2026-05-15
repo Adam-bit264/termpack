@@ -1,5 +1,5 @@
 ## TermPack
-This is a simple command line tool that packages files on mac with shell scripts to create a terminal file. An icon can also be provided. This tool also automaticly hides the extention if the -p argument is present.
+This is a simple command line tool that packages files on mac with shell scripts to create a terminal file. An icon can also be provided. This tool also hides the extention of the output file if the -p argument is present.
 
 ## Prerequisites
 Install required macOS tools via Homebrew:
