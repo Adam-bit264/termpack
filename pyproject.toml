@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "termpack"
+version = "0.1.0"
+description = "A CLI tool to package macOS files into terminal scripts."
+readme = "README.md"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.10"
+authors = [
+    { name = "Adam Bar-Or" }
+]
+dependencies = []
+
+[project.scripts]
+termpack = "termpack.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["termpack"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "termpack/*.txt",
+    "Brewfile",
+    "example/"
+]
