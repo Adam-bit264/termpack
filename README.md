@@ -12,7 +12,7 @@ brew bundle
 
 | Argument | Description |
 | :--- | :--- |
-| `name` | The name of the output file (e.g., "My App") |
+| `name` | The name of the output file (e.g., "TerminalFile") |
 | `input_file` | The path to the file you want to package |
 | `script` | The path to the shell script file |
 | `-t`, `--type` | The file extension to open (defaults to `rtf`) |
