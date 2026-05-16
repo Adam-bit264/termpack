@@ -30,7 +30,7 @@ def main():
     terminal_file_path = os.path.join(args.output, f"{args.name}.terminal")
     template_path = os.path.join(os.path.dirname(__file__), "template.txt")
 
-    if not os.path.exists(template_path):
+    if os.path.exists(template_path) is not False:
         sys.exit(1)
 
     try:
